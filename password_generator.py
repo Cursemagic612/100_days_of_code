@@ -12,22 +12,18 @@ letter_req = 0
 symbol_req = 0
 number_req = 0
 gen_password = []
-counter = 0
 
 for letter_req in range(0,nr_letters):
     temp_letter = random.choice(letters)
     gen_password.extend(temp_letter)
-    counter += 1
 
 for symbol_req in range(0,nr_symbols):
     temp_symbol = random.choice(symbols)
     gen_password.extend(temp_symbol)
-    counter += 1
 
 for number_req in range(0,nr_numbers):
     temp_number = random.choice(numbers)
     gen_password.extend(temp_number)
-    counter += 1
 
 random.shuffle(gen_password)
 
